@@ -12,12 +12,13 @@ interface AgentProps {
             displayIcon: string
             displayName: string
         }[]
+        fullPortrait: string
     }
 }
 
 export const Agent = ({ agent }: AgentProps) => (
   <a href="#" className={styles.agent}>
-    <div>
+    <div className={styles.text}>
       <p>{agent.role.displayName}</p>
       <strong>{agent.displayName}</strong>
     </div>
@@ -33,5 +34,9 @@ export const Agent = ({ agent }: AgentProps) => (
           </li>
     ))}
     </ul>
+
+    <div className={styles.background}>
+        <span style={{ backgroundImage: `url('${agent.fullPortrait}')` }}></span>
+    </div>
   </a>
 )
