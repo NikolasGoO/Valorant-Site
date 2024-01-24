@@ -22,7 +22,7 @@ export const Agent = ({ agent }: AgentProps) => (
       <p>{agent.role.displayName}</p>
       <strong>{agent.displayName}</strong>
     </div>
-    <ul>
+    <ul className={styles.abilities}>
     {agent.abilities.map(ability => (
             <li key={ability.displayName}>
             <Image
