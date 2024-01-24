@@ -1,10 +1,11 @@
 import styles from 'styles/home.module.scss'
-import Header from './src/components/header/index.tsx'
+import { Header } from 'components/header'
+import { Main } from 'components/main'
 
 const HomePage = () => (
   <div className={styles.container}>
     <Header />
-    <main>main</main>
+    <Main />
   </div>
 )
 

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import styles from './styles.module.scss'
 import { Triangle } from '@phosphor-icons/react'
 
-export const header = () => (
+export const Header = () => (
   <header className={styles.container}>
     <div className={styles.header__content}>
       <Image
